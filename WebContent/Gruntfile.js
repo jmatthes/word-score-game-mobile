@@ -64,7 +64,7 @@ module.exports = function(grunt) {
 		    	      cssmin: { // minifying css task
 		    	          dist: {
 		    	            files: {
-		    	              'css/style.min.css': 'build/styles/app.css'
+		    	              'css/<%= pkg.name %>.min.css': 'build/styles/app.css'
 		    	            }
 		    	          }
 		    	        },
@@ -94,7 +94,7 @@ module.exports = function(grunt) {
 				tasks : [ 'sass', 'cssmin' ]
 			},
 			js : {
-				files : 'src/js/main/*.js',
+				files : ['src/js/main/*.js', 'src/js/vendor/*.js'],
 				tasks : [ 'uglify']
 			}
 		}

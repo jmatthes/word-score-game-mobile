@@ -1,0 +1,1 @@
+var APPLICATION_NAME = "Word Score";
