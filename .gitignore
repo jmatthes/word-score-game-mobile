@@ -1,0 +1,8 @@
+
+# Generated folders #
+###################
+/build/**
+.sass-cache/**
+/WebContent/build/**
+/WebContent/node_modules/**
+
